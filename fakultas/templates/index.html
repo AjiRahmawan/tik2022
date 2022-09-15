@@ -1,0 +1,127 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universitas Sultan Ageng Tirtayasa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'logo.png' %}" alt="" width="30" height="24" class="d-inline-block align-text-top" />
+          UNTIRTA
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Halaman Utama</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pendahuluan.html">Selayang Pandang</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Fakultas </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="fh">Fakultas Hukum</a></li>
+                <li><a class="dropdown-item" href="fkip">Fakultas Keguruan dan Ilmu Pendidikan</a></li>
+                <li><a class="dropdown-item" href="ft">Fakultas Teknik</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+      <h1 class="display-4">Statistika</h1>
+      <img src="{% static 'awal.jpg' %}" alt="Statistika" width="300" class="rounded-circle img-thumbnail" />
+      <p class="lead">
+        Universitas Sultan Ageng Tirtayasa menawarkan pengalaman akademik dan nonakademik yang luas, yang mencakup lingkungan, budaya sekaligus juga kesempatan akademik. Universitas Sultan Ageng Tirtayasa memiliki 7 fakultas dan 1 Program
+        Pendidikan Magister (Pascasarjana).
+      </p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 32">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,0L8,32C16,64,32,128,48,133.3C64,139,80,85,96,74.7C112,64,128,96,144,133.3C160,171,176,213,192,208C208,203,224,149,240,149.3C256,149,272,203,288,218.7C304,235,320,213,336,208C352,203,368,213,384,202.7C400,192,416,160,432,170.7C448,181,464,235,480,245.3C496,256,512,224,528,224C544,224,560,256,576,272C592,288,608,288,624,250.7C640,213,656,139,672,144C688,149,704,235,720,250.7C736,267,752,213,768,192C784,171,800,181,816,181.3C832,181,848,171,864,176C880,181,896,203,912,218.7C928,235,944,245,960,256C976,267,992,277,1008,250.7C1024,224,1040,160,1056,154.7C1072,149,1088,203,1104,197.3C1120,192,1136,128,1152,90.7C1168,53,1184,43,1200,42.7C1216,43,1232,53,1248,101.3C1264,149,1280,235,1296,245.3C1312,256,1328,192,1344,149.3C1360,107,1376,85,1392,96C1408,107,1424,149,1432,170.7L1440,192L1440,320L1432,320C1424,320,1408,320,1392,320C1376,320,1360,320,1344,320C1328,320,1312,320,1296,320C1280,320,1264,320,1248,320C1232,320,1216,320,1200,320C1184,320,1168,320,1152,320C1136,320,1120,320,1104,320C1088,320,1072,320,1056,320C1040,320,1024,320,1008,320C992,320,976,320,960,320C944,320,928,320,912,320C896,320,880,320,864,320C848,320,832,320,816,320C800,320,784,320,768,320C752,320,736,320,720,320C704,320,688,320,672,320C656,320,640,320,624,320C608,320,592,320,576,320C560,320,544,320,528,320C512,320,496,320,480,320C464,320,448,320,432,320C416,320,400,320,384,320C368,320,352,320,336,320C320,320,304,320,288,320C272,320,256,320,240,320C224,320,208,320,192,320C176,320,160,320,144,320C128,320,112,320,96,320C80,320,64,320,48,320C32,320,16,320,8,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Jumbotron -->
+    <!-- Ringkasan -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Fakultas</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-4 mb-3">
+            <p><b>Fakultas Hukum</b></p>
+            <div class="card">
+              <div class="card-body">
+                <p>
+                  Fakultas Hukum Universitas Sultan Ageng Tirtayasa berdiri tahun 1981, tepatnya pada tanggal 1 Oktober 1981 dengan status sebagai STIH Serang yang bertempat di Kresidenan Banten, Jl. K.H. Sam’un dan merupakan embrio
+                  lahirnya Universitas Sultan Ageng Tirtayasa Banten. Mulai tahun 1984, STIH Serang di integrasi sesuai dengan SK Mendikbud No. 0596/0/1984, menjadi Fakultas Hukum Universitas Sultan Ageng Tirtayasa yang bertempat di Jl.
+                  Raya Jakarta KM. 4 Pakupatan, Serang.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <p><b>Fakultas Keguruan dan Ilmu Pendidikan</b></p>
+            <div class="card">
+              <div class="card-body">
+                <p>
+                  Tuntutan kebutuhan masyarakat terus berkembang terhadap FKIP dan untuk menjawab hal itu, maka pada tahun 1994 dibuka Program Pendidikan Guru Taman Kanak-kanak (PGTK) dengan surat keputusan yayasan Pendidikan Tirtayasa.
+                  Berikutnya, pada tahun 2004 dibuka juga Program Studi Pendidikan Bahasa Inggris (S.1) dengan izin operasional Dikti Depdiknas RI nomor: 1254/D/T/2003. Pada tahun 2002 dibuka kembali dua Program Studi yakni Pendidikan
+                  Biologi dan Pendidikan Matematika sekaligus mengusulkan status D.2 PGTK dan keluarlah izin operasional ketiga program studi itu dengan surat keputusan Dirjen Dikti Depdiknas RI nomor: 2098/D/T/2004, akan tetapi sekarang
+                  program D.2 PGTK telah diubah menjadi Program S.1 PG PAUD dengan surat keputusan Menteri Pendidikan Nasional Nomor: 105/D/O/2010.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <p><b>Fakultas Teknik</b></p>
+            <div class="card">
+              <div class="card-body">
+                <p>
+                  Fakultas Teknik merupakan salah satu fakultas dalam lingkungan Universitas Sultan Ageng Tirtayasa, dimana sejak tahun 2001 Untirta telah menjadi perguruan tinggi negeri berdasarkan Surat Keputusan Presiden Republik
+                  Indonesia Nomor 32 tanggal 19 Maret tahun 2001.Kampus FT. Untirta berada dalam Kawasan Industri Cilegon, dimana pada kawasan ini terdapat berbagai macam industri logam berat, kimia, manufacture, engineering dan pembangkit
+                  listrik, diantaranya PT. Krakatau Steel & Group, PT. Krakatau Posco, PT. Candra Asri, PT. Asahimas, PT. Tri Polita, PT. PLN (Persero) PLTGU Cilegon, PT. Indonesia Power UBP Suralaya dan sebagainya. Secara geografis,
+                  Fakultas Teknik Untirta berada pada gerbang dan lintasan perdagangan Jawa-Sumatera serta lintas perdagangan internasional, yaitu dengan adanya pelabuhan penyeberangan ASDP di Merak serta beberapa pelabuhan internasional
+                  diantaranya Cigading, Bojonegara dan Krakatau Bandar Samudra. Secara administratif, Fakultas Teknik Untirta berada di Kota Cilegon dan Provinsi Banten yang terus berkembang.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Ringkasan -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <h1>Universitas Sultan Ageng Tirtayasa</h1>
+    <a href="fkip">FKIP</a>
+  </body>
+</html>
